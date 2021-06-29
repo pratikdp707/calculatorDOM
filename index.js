@@ -10,14 +10,17 @@ for(items of buttons){
 }
 
 document.addEventListener("keypress",function(event){
-    calculate(event.key);
+    if(!document.getElementById('btn'+event.key)){
+        alert("Only Numbers are allowed");
+    }
+    else{
+        calculate(event.key);
+    }
 });
 
 function calculate(key){
-    if(!document.getElementById('btn'+key))
-        alert("Only Numbers are allowed");
-
     console.log('key pressed is : '+key);
+    
     if(key == 'x'){
         key = '*';
         displayScreenValue += key;
@@ -30,7 +33,6 @@ function calculate(key){
     else if(key == "="){
         displayScreenValue = eval(displayScreenValue);
         displayScreen.value = eval(displayScreenValue);
-        
     }
     else{
         displayScreenValue += key;
