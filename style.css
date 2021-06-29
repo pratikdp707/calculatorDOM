@@ -1,0 +1,28 @@
+.container{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.screen{
+    width: 500px;
+    border : 2px solid grey;
+    border-radius: 4px;
+    height: 40px;
+    margin: 20px;
+}
+
+table{
+    margin: auto;
+}
+
+.btn{
+    height: 55px;
+    width: 115px;
+    margin: 5px;
+    border-radius: 10px;
+    font-size: 40px;
+}
+
+td{
+    size: 2rem;
+}
